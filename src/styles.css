@@ -1,0 +1,151 @@
+:root {
+  --color-1: #FFFFFF;
+  --color-2: #DB9158;
+  --color-3: #EFF3F6;
+  --color-4: #172940;
+  --color-5: #EB4688;
+  --color-6: #AAA854;
+  --color-7: #6C8099;
+  --color-8: #AAAA9B;
+  --color-9: #F2F5F8;
+  --color-10: #EE7F7B;
+  --color-11: #B1CA9E;
+  --color-12: #AED4F5;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  /* Default value 16px */
+  font-size: 1rem;
+}
+
+body {
+  background: var(--color-9);
+  font-family: sans-serif;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background: var(--color-3);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  background: var(--color-1);
+  box-shadow: -6px 2px 10px 2px var(--color-12);
+}
+
+ul li {
+  cursor: pointer;
+  color: var(--color-2);
+}
+
+.ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20rem;
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  padding: 0 3.8rem;
+}
+
+.lit {
+  color: var(--color-2);
+  cursor: pointer;
+}
+
+em {
+  font-family: 'Roboto', sans-serif;
+  font-size: large;
+  color: var(--color-5);
+  font-weight: 900;
+}
+
+a {
+  color: var(--color-4);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+}
+
+.single-card{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem;
+
+}
+
+.dish-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 0.2rem;
+  height: 84%;
+  width: 85%;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  color: var(--color-2);
+  background: none;
+  align-self: flex-end;
+  font-weight: 900  ;
+}
+
+img {
+  border: 0.2rem solid var(--color-2);
+  border-radius: 0.3rem;
+  height: 7rem;
+  width: 35%;
+}
+
+.active {
+  color: white;
+  font-weight: 900;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  background-color: var(--color-2);
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+.cart {
+  float: right;
+  bottom: 0;
+  right: 0;
+  border: 2px solid black;
+  height: 15rem;
+  width: 17rem;
+  margin: 0 2rem 2rem 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 2rem;
+  }
+}
