@@ -157,21 +157,46 @@ liItem.forEach(li => {
 //==================================================
 //=====================================SHOPPING CART
 
-const footer = document.createElement('footer');
+const footer          = document.createElement('footer');
 const shoppingCartDiv = document.createElement('div');
+const div1TitleOrder  = document.createElement('div');     
+const div2ListItems   = document.createElement('div');     
+const div3TwoButtons  = document.createElement('div');
+const titleCart       = document.createElement('h2');    
+const btnClear        = document.createElement('button');
+const btnPlacerOrder  = document.createElement('button');
+const divAdd          = document.createElement('div');
+const msgAdd          = document.createElement('h3');
 
+titleCart.textContent      = 'Order Details';
+btnClear.textContent       = 'Clear';
+btnPlacerOrder.textContent = 'Placer Order';
+msgAdd.textContent         = 'Add'
+
+msgAdd.classList.add('add__square');
+divAdd.classList.add('nav__add');
+titleCart.classList.add('title__cart');
+shoppingCartDiv.classList.add('main__cart');
+div1TitleOrder.classList.add('div__title');
+div2ListItems.classList.add('div__items');
+div3TwoButtons.classList.add('div__buttons');
+btnClear.classList.add('red__btn');
+btnPlacerOrder.classList.add('green__btn');
+
+divAdd.appendChild(msgAdd);
+div3TwoButtons.appendChild(btnClear);
+div3TwoButtons.appendChild(btnPlacerOrder);
+div1TitleOrder.appendChild(titleCart);
+shoppingCartDiv.appendChild(div1TitleOrder);
+shoppingCartDiv.appendChild(divAdd);
+shoppingCartDiv.appendChild(div2ListItems);
+shoppingCartDiv.appendChild(div3TwoButtons);
 footer.appendChild(shoppingCartDiv);
-footer.classList.add('at-bottom')
-shoppingCartDiv.classList.add('cart');
 app.appendChild(footer);
 
 window.onload = function () {
   filterFunction('all');
 };
-
-// const img = document.createElement('img');
-// img.setAttribute('src','./src/assets/item-1.jpg');
-// app.appendChild(img);
 
 
 

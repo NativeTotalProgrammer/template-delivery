@@ -132,14 +132,92 @@ p {
   font-size: 0.9rem;
 }
 
-.cart {
+/* footer {
+  display: flex;
+  justify-content: flex-end;
+} */
+
+.main__cart {
   float: right;
-  bottom: 0;
-  right: 0;
-  border: 2px solid black;
-  height: 15rem;
-  width: 17rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-1);
+  min-height: 20rem;
+  min-width: 20em;
   margin: 0 2rem 2rem 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: -2px 1px 10px -3px rgba(0,0,0,0.2);
+}
+
+.div__title h2 {
+  border: 2px solid royalblue;
+}
+
+.div__items {
+  height: 150px;
+  width: 95%;
+  margin: 0.5rem 0;
+  border: 2px solid royalblue;
+}
+
+.div__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  border: 2px solid royalblue;
+}
+
+.red__btn {
+  align-self: center;
+  margin: 0.2rem;
+  width: 10rem;
+  color: var(--color-1);
+  padding: 0.2rem;
+  font-weight: 900;
+  background: var(--color-10);
+}
+
+.green__btn {
+  align-self: center;
+  margin: 0.2rem;
+  width: 10rem;
+  color: var(--color-1);
+  padding: 0.2rem;
+  font-weight: 900;
+  background: var(--color-6);
+}
+
+
+.title__cart {
+  margin-top: 0.2rem;
+  text-decoration: none;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+
+.nav__add {
+  width: 97%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(174,212,245,0.3);
+  border-radius: 0.2rem;
+}
+
+
+.add__square {
+  background: var(--color-12);
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  width: 25%;
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
 }
 
 @media only screen and (max-width: 800px) {
